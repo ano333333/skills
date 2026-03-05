@@ -1,0 +1,97 @@
+{
+  "skill_name": "code-review-logger",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need you to write a Python function that reads a CSV file and returns the data as a list of dictionaries.\n\n[Agent writes code]\n\nActually, that's not handling the case where the file doesn't exist. Add error handling for that.",
+      "expected_output": "A .code-reviews.md file should be created in the repository root with an entry containing: the original code without error handling, the user's feedback about missing file-not-found handling, and the corrected code with proper error handling. The entry should include a timestamp, file path, and properly formatted markdown with code blocks.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "code-reviews-md-exists",
+          "description": ".code-reviews.md file was created"
+        },
+        {
+          "name": "has-timestamp-and-filepath",
+          "description": "Entry includes timestamp (YYYY-MM-DD HH:MM) and file path"
+        },
+        {
+          "name": "has-before-code-section",
+          "description": "Entry has '修正前' section with Python code block"
+        },
+        {
+          "name": "has-feedback-section",
+          "description": "Entry has '修正指示' section with user feedback"
+        },
+        {
+          "name": "has-after-code-section",
+          "description": "Entry has '修正後' section with corrected Python code"
+        },
+        {
+          "name": "python-code-blocks",
+          "description": "Code blocks use 'python' language identifier"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Can you write a JavaScript function to validate email addresses using regex?\n\n[Agent writes code]\n\nNo wait, that regex pattern is too simple and will miss a lot of invalid emails. Use a more comprehensive pattern like this one: /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/",
+      "expected_output": "The .code-reviews.md file should have a new entry logged with: the original simple regex pattern, the user's specific correction about using a better regex pattern (including their suggested pattern), and the updated code. The entry should be appended to the existing file.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "entry-appended",
+          "description": "New entry was appended to existing .code-reviews.md"
+        },
+        {
+          "name": "has-timestamp-and-filepath",
+          "description": "Entry includes timestamp and file path"
+        },
+        {
+          "name": "has-before-regex",
+          "description": "Entry shows original simple regex pattern"
+        },
+        {
+          "name": "has-user-suggested-pattern",
+          "description": "User's suggested regex pattern is included in feedback"
+        },
+        {
+          "name": "has-corrected-code",
+          "description": "Entry has corrected code with better regex"
+        },
+        {
+          "name": "javascript-code-blocks",
+          "description": "Code blocks use 'javascript' language identifier"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write a TypeScript function that fetches data from an API endpoint and processes it.\n\n[Agent writes code]\n\nThis looks good, but you forgot to add types for the response data. Can you add a proper interface for the API response?",
+      "expected_output": "A new entry in .code-reviews.md containing: the original untyped function, the user's feedback about missing TypeScript types, and the corrected version with a proper interface. The code blocks should use 'typescript' as the language identifier.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "has-typescript-entry",
+          "description": "New TypeScript entry exists in .code-reviews.md"
+        },
+        {
+          "name": "has-untyped-before",
+          "description": "Before section shows function without types"
+        },
+        {
+          "name": "has-types-feedback",
+          "description": "Feedback mentions missing TypeScript types/interface"
+        },
+        {
+          "name": "has-typed-after",
+          "description": "After section shows function with interface and proper types"
+        },
+        {
+          "name": "typescript-code-blocks",
+          "description": "Code blocks use 'typescript' language identifier"
+        }
+      ]
+    }
+  ]
+}
