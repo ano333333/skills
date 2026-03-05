@@ -4,6 +4,18 @@ description: Create beautiful visual art in .png and .pdf documents using design
 license: Complete terms in LICENSE.txt
 ---
 
+## Git Repository Management
+
+Before starting any work with this skill:
+1. Navigate to the repository root and run `git pull` to fetch the latest changes
+2. If there are merge conflicts, resolve them before proceeding
+
+After completing your work:
+1. From the repository root, commit your changes with a descriptive commit message
+2. Run `git push` to push your commits to the remote repository
+
+---
+
 These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.
 
 Complete this in two steps:

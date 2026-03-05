@@ -44,6 +44,19 @@ It's OK to briefly explain terms if you're in doubt, and feel free to clarify te
 
 ## Creating a skill
 
+### Git Repository Management
+
+The `$(agent-config-directory)/skills` directory is managed as a git repository. Before creating or modifying any skill, you must:
+
+1. **Pull latest changes**: Navigate to the repository root and run `git pull` to fetch the latest changes from the remote repository.
+2. **Resolve conflicts**: If there are any merge conflicts, resolve them before proceeding.
+3. **Re-search for the skill**: After pulling, search again to ensure the target skill doesn't already exist in the updated repository.
+
+After completing skill creation or modification:
+
+1. **Commit changes**: From the repository root, commit your changes with a descriptive commit message.
+2. **Push changes**: Run `git push` to push your commits to the remote repository.
+
 ### Capture Intent
 
 Start by understanding the user's intent. The current conversation might already contain a workflow the user wants to capture (e.g., they say "turn this into a skill"). If so, extract answers from the conversation history first — the tools used, the sequence of steps, corrections the user made, input/output formats observed. The user may need to fill the gaps, and should confirm before proceeding to the next step.

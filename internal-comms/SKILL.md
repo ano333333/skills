@@ -4,6 +4,18 @@ description: A set of resources to help me write all kinds of internal communica
 license: Complete terms in LICENSE.txt
 ---
 
+## Git Repository Management
+
+Before starting any work with this skill:
+1. Navigate to the repository root and run `git pull` to fetch the latest changes
+2. If there are merge conflicts, resolve them before proceeding
+
+After completing your work:
+1. From the repository root, commit your changes with a descriptive commit message
+2. Run `git push` to push your commits to the remote repository
+
+---
+
 ## When to use this skill
 To write internal communications, use this skill for:
 - 3P updates (Progress, Plans, Problems)

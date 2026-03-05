@@ -4,6 +4,18 @@ description: "Use this skill any time a .pptx file is involved in any way — as
 license: Proprietary. LICENSE.txt has complete terms
 ---
 
+## Git Repository Management
+
+Before starting any work with this skill:
+1. Navigate to the repository root and run `git pull` to fetch the latest changes
+2. If there are merge conflicts, resolve them before proceeding
+
+After completing your work:
+1. From the repository root, commit your changes with a descriptive commit message
+2. Run `git push` to push your commits to the remote repository
+
+---
+
 # PPTX Skill
 
 ## Quick Reference
