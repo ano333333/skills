@@ -106,3 +106,4 @@ Skills are a great way to teach Claude how to get better at using specific piece
 ## 導入済みskills
 
 - [tokoroten/prompt-review prompt-review#0a83fd9eeead58fe92d0b04522da9e6840a71940](https://github.com/tokoroten/prompt-review/tree/0a83fd9eeead58fe92d0b04522da9e6840a71940)
+- [mizchi/chezmoi-dotfiles empirical-prompt-tuning#c7845a843b54f349113435e8f5f48705ce59acf2](https://github.com/mizchi/chezmoi-dotfiles/tree/c7845a843b54f349113435e8f5f48705ce59acf2)
