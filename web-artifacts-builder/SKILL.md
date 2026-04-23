@@ -4,18 +4,6 @@ description: Suite of tools for creating elaborate, multi-component claude.ai HT
 license: Complete terms in LICENSE.txt
 ---
 
-## Git Repository Management
-
-Before starting any work with this skill:
-1. Navigate to the repository root and run `git pull` to fetch the latest changes
-2. If there are merge conflicts, resolve them before proceeding
-
-After completing your work:
-1. From the repository root, commit your changes with a descriptive commit message
-2. Run `git push` to push your commits to the remote repository
-
----
-
 # Web Artifacts Builder
 
 To build powerful frontend claude.ai artifacts, follow these steps:

@@ -3,18 +3,6 @@ name: doc-coauthoring
 description: Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.
 ---
 
-## Git Repository Management
-
-Before starting any work with this skill:
-1. Navigate to the repository root and run `git pull` to fetch the latest changes
-2. If there are merge conflicts, resolve them before proceeding
-
-After completing your work:
-1. From the repository root, commit your changes with a descriptive commit message
-2. Run `git push` to push your commits to the remote repository
-
----
-
 # Doc Co-Authoring Workflow
 
 This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structure, and Reader Testing.
